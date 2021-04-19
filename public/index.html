@@ -1,48 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <!-- <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <!-- <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-database.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-messaging.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-storage.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-analytics.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-remote-config.js"></script>
     <script defer src="/__/firebase/8.4.1/firebase-performance.js"></script> -->
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 360px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
+
+      body {
+        border-top: 16px solid #ffa100;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div id="message">
       <h2>Welcome</h2>
       <h1>Firebase Hosting Setup Complete</h1>
       <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <p id="load">Firebase SDK Loading&hellip;</p> -->
 
-    <script>
+  <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -75,27 +142,110 @@
           loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
         }
       });
-    </script>
+    </script> -->
 
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-      
-      <!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
              https://firebase.google.com/docs/web/setup#available-libraries -->
-      
-      <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyDR8BYcApMyd4LB2uENg67izs1e3q0Ey-8",
-          authDomain: "remote-work-era---thesis.firebaseapp.com",
-          projectId: "remote-work-era---thesis",
-          storageBucket: "remote-work-era---thesis.appspot.com",
-          messagingSenderId: "762366385254",
-          appId: "1:762366385254:web:8cc36a9da2a7986b2a21a7"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-      </script>
-      <script src="js/scripts.js"></script>
-  </body>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDR8BYcApMyd4LB2uENg67izs1e3q0Ey-8",
+      authDomain: "remote-work-era---thesis.firebaseapp.com",
+      projectId: "remote-work-era---thesis",
+      storageBucket: "remote-work-era---thesis.appspot.com",
+      messagingSenderId: "762366385254",
+      appId: "1:762366385254:web:8cc36a9da2a7986b2a21a7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="main.js"></script>
+
+  <div class="uk-position-top-right" style="margin: 5px;">
+    <h4 id="countdown" class="uk-heading-large">00</h4>
+    <div>Seconds</div>
+  </div>
+  <div class="uk-position-top-center" style="margin: 5px;">
+    <h4 id="scoreElement" class="uk-heading-large">0</h4>
+    <div>Points</div>
+  </div>
+
+  <div class="uk-position-center" style="width: 50%;">
+    <div id="settingsElement">
+      <div>
+        <h4 class="uk-heading-small">Time limit (s)</h4>
+      </div>
+      <div class="uk-margin">
+        <select id="seconds" class="uk-select">
+          <option>2</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+          <option>35</option>
+          <option>40</option>
+          <option>45</option>
+          <option>50</option>
+          <option>55</option>
+          <option>60</option>
+          <option>65</option>
+          <option>70</option>
+          <option>75</option>
+          <option>80</option>
+          <option>85</option>
+          <option>90</option>
+        </select>
+      </div>
+
+
+
+      <!-- <div class="uk-margin">
+      <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+    </div>
+
+    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+      <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+      <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+    </div>
+
+    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+      <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+      <label><input class="uk-checkbox" type="checkbox"> B</label>
+    </div>
+
+    <div class="uk-margin">
+      <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+    </div> -->
+      <button class="uk-button uk-button-primary uk-button-large" onclick="startGame()">Play</button>
+    </div>
+
+    <div id="gameElement" hidden="true">
+      <h4 id="theWord" class="uk-heading-small"></h4>
+      <button class="uk-button uk-button-primary uk-button-large" onclick="addPoint()">Correct</button>
+      <button class="uk-button uk-button-danger uk-button-large" onclick="skip()">Skip</button>
+
+    </div>
+
+
+  </div>
+
+  <div hidden=true style="margin: 5px;" id="successList" class="uk-position-center-left">
+    <h4>Succeded:</h4>
+    <ul id="successListElement" class="uk-list">
+    </ul>
+  </div>
+  <div hidden=true style="margin: 5px;" id="failureList" class="uk-position-center-right">
+    <h4>Skipped:</h4>
+    <ul id="failureListElement" class="uk-list">
+    </ul>
+  </div>
+  <script>
+
+  </script>
+
+</body>
+
 </html>
